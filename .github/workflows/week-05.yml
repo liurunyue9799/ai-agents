@@ -51,4 +51,4 @@ jobs:
       - name: Restore the locked environment
         run: uv sync --locked
       - name: Run ${{ env.W5_IMPLEMENTATION }} acceptance tests
-        run: uv run --locked pytest -q --impl="$W5_IMPLEMENTATION"
+        run: uv run --locked pytest -q tests --impl="$W5_IMPLEMENTATION"
